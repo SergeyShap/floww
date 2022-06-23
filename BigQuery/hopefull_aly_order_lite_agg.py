@@ -224,7 +224,6 @@ def etl():
 if __name__ == "__main__":
     logger = setup_logger(f'{EVENTS_TABLE}')
     logger.setLevel(logging.INFO)
-    
     try:
         etl()
     except Exception as err:
