@@ -1,0 +1,51 @@
+Задача 1.
+Дано:
+таблица с событиями пользователей в BigQuery: `hopeful-ally-307310.test_de.events_data` (инфа по подключению ниже)
+таблица с оплаченными покупками orders_lite.csv
+
+Преобразовать таблицу с событиями, насытить её данными из второй таблицы и загрузить в BQ с такой схемой:
+-app_name (string)
+-app_version (string)
+-created_at (timestamp)
+-event_name (string)
+-user_id (int)
+-screen_name (string)
+-product_id (string)
+-city_catalog (int)
+-сompleted_purchases (int)
+-total_revenue (int)
+Уточнения:
+-product_id (список, пример “57364911” или “58935089,58996453,59452609”)
+-сompleted_purchases (количество завершенных покупок на данный момент времени, брать из таблицы orders_lite)
+-total_revenue (сумма дохода со всех завершенных покупок на данный момент времени, брать из таблицы orders_lite)
+
+Выполнять задачу с перспективой масштабирования на более большие файлы.
+Загрузите полученную таблицу в BQ `hopeful-ally-307310.test_de.output_lastname`
+Где lastname - ваша фамилия, пример `hopeful-ally-307310.test_de.output_devyatkin`
+
+Доступы в BQ:
+https://console.cloud.google.com/bigquery?project=hopeful-ally-307310
+Доступ выдан на почту gmail
+
+Документация по подключению к BQ 
+https://cloud.google.com/bigquery/docs/reference/libraries-overview 
+hopeful-ally-307310-11d59346797f.json - файл для аутентификации(сервис аккаунт)
+
+Задачу решать с помощью python. 
+Комментируйте шаги, которые выполнялись.
+Рассуждения тоже лишними не будут.
+
+
+
+Задача 2.
+Таблица events_data в BQ содержит 1млрд строк и пополняется на 1млн строк ежедневно
+Таблица orders_lite находится в Mysql на сервере, пополняется на 5000 строк ежедневно.
+Таблицу output нужно обновлять раз в день. Каким образом вы предлагаете это сделать?
+*А если ежечасно?
+
+
+
+По любым вопросам:
+Девяткин Александр
+al.devyatkin@flowwow.com
+Телеграмм @al_devyatkin
