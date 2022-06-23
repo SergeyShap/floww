@@ -34,7 +34,7 @@ CREDENTIALS = service_account.Credentials.from_service_account_file(
 PROJECT = 'hopeful-ally-307310'
 
 EVENTS_TABLE = 'hopeful-ally-307310.test_de.events_data'
-TARGET_TABLE = 'hopeful-ally-307310.test_de.output_shaposhnikov2'
+TARGET_TABLE = 'hopeful-ally-307310.test_de.output_shaposhnikov'
 
 PATH = '../orders_lite.csv'
 
