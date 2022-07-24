@@ -24,12 +24,10 @@
 Где lastname - ваша фамилия, пример `hopeful-ally-307310.test_de.output_devyatkin`
 
 Доступы в BQ:
-https://console.cloud.google.com/bigquery?project=hopeful-ally-307310
+
 Доступ выдан на почту gmail
 
 Документация по подключению к BQ 
-https://cloud.google.com/bigquery/docs/reference/libraries-overview 
-hopeful-ally-307310-11d59346797f.json - файл для аутентификации(сервис аккаунт)
 
 Задачу решать с помощью python. 
 Комментируйте шаги, которые выполнялись.
